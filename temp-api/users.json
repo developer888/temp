@@ -1,0 +1,29 @@
+{
+    "total": 10000,
+    "records": [{
+        "name": "Olger Warnier",
+        "email": "olger@example.com",
+        "roles": ["Doctor", "super-admin"],
+        "id": "7f2ac693-27b0-43f7-9079-0bccc38556be"
+    }, {
+        "name": "Vasisliy",
+        "email": "vasa@example.com",
+        "roles": ["Nurce"],
+        "id": "086cdcac-e5db-467c-8206-b495c0dfb2f4"
+    }, {
+        "name": "Leha",
+        "email": "leha@example.com",
+        "roles": ["Administrator", "Doctor"],
+        "id": "44ad2626-1b8e-4ed2-9460-027ccb4a1551"
+    }, {
+        "name": "vitalik",
+        "email": "vitalik@example.com",
+        "roles": ["SuperUser"],
+        "id": "12cfcb0e-ce2f-4f9e-8a1f-a35e58a5b0a2"
+    }, {
+        "name": "Oleg",
+        "email": "oleg@example.com",
+        "roles": ["Oleg-role"],
+        "id": "bc3b220f-8a29-4b7d-be14-737e13efcda4"
+    }]
+}
