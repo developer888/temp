@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="libs/jquery/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css"/>
+    <style> th, td {border: 1px solid black; padding:10px;}
+        th {background-color: #ffd63f;}
+    </style>
+    <title>tablichka</title>
+</head>
+<body>
+<table id="table">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Roles</th>
+        <th>ID</th>
+        <th>isConfirmed</th>
+        <th>phone</th>
+        <th>isOnline</th>
+    </tr>
+</table>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            method: 'GET',
+            url: "temp-api/users.json",
+            success: function (data) {
+                for (var i = 0; i < data.rows.length; i++) {
+                    var tr = '<tr>' +
+                            '<td>' + data.rows[i].name + '</td>' +
+                            '<td>' + data.rows[i].email + '</td>' +
+                            '<td>' + data.rows[i].roles + '</td>' +
+                            '<td>' + data.rows[i].id + '</td>' +
+                            '<td>' + (data.rows[i].isConfirmed? '+':'-') + '</td>' +
+                            '<td>' + data.rows[i].phone + '</td>' +
+                            '<td>' + (data.rows[i].isOnline? '+':'-') + '</td>' +
+                            '</tr>';
+                    $('#table').append(tr);
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

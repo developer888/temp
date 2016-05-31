@@ -1,0 +1,141 @@
+@import "index";
+$transparent-bg: rgba(0, 0, 0, 0);
+table td:nth-child(1) {
+  white-space: nowrap;
+}
+table td:nth-child(3) {
+  width: 300px;
+}
+table td:nth-child(4) {
+  min-width: 300px !important;
+}
+#table > tbody > tr > td:nth-child(3) {
+  padding: 0 !important;
+}
+
+#table label.checkbox > input[type="checkbox"] {
+  margin-left: -20px !important;
+  margin-top: 3px !important;
+}
+
+body {
+  background-color: $body-bg;
+  color: $gray;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  .fixed-table-container {
+    border-radius: $border-radius-base !important;
+  }
+  .form-control ,.form-control:active{
+    margin-top: -50px;
+    color: $gray;
+    font-family: $font-family-sans-serif;
+    border-radius: $border-radius-base !important;
+    box-shadow: none !important;
+  }
+  .form-control:focus{
+    border-color: $gray !important;
+  }
+  h1 {
+    font-size: $font-size-h1;
+    font-weight: $headings-font-weight+200;
+  }
+  h2 {
+    font-size: $font-size-h2;
+    border: none;
+  }
+  table.table {
+    background: $table-bg;
+    tr {
+      th {
+        font-size: $font-size-large;
+        background-color: $navbar-default-bg !important;
+        border-radius: $border-radius-base !important;
+      }
+      td {
+        border-color: $table-border-color;
+        background-color: inherit !important;
+        border-radius: $border-radius-base !important;
+        .btn-group.open .dropdown-toggle, button:active {
+          box-shadow: none !important;
+          background-color: $transparent-bg !important;
+        }
+        button.dropdown-toggle {
+          span {
+            text-shadow: none;
+          }
+          b {
+            float: right;
+            margin: 4px;
+            color: $gray;
+          }
+          width: 299px;
+          border: 0;
+          padding: 8px;
+          text-align: left;
+          background: $transparent-bg;
+          background: -moz-linear-gradient(top, $transparent-bg 0%, $transparent-bg 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, $transparent-bg 0%, $transparent-bg 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, $transparent-bg 0%, $transparent-bg 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$transparent-bg', endColorstr='$transparent-bg', GradientType=0); /* IE6-9 */
+        }
+        button {
+          border-radius: $border-radius-base;
+          padding: 0 12px;
+        }
+      }
+
+    }
+    tr:nth-child(2n) {
+      background-color: $table-bg-accent;
+    }
+    tr:hover {
+      background-color: $table-bg-hover !important;
+    }
+  }
+  a {
+    color: $link-color;
+  }
+  a:hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+  // гнопги
+
+  button {
+    color: $brand-primary;
+    background-color: transparent;
+    border: 0;
+  }
+  #table td:nth-child(6), #table td:nth-child(7) {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  button:hover, button:focus {
+    color: $gray !important;
+  }
+  .multiselect-container.dropdown-menu {
+    border-radius: $border-radius-base !important;
+    width: 299px;
+    -webkit-box-shadow: 0px 3px 6px -2px rgba(85,85,85,1);
+    -moz-box-shadow: 0px 3px 6px -2px rgba(85,85,85,1);
+    box-shadow: 0px 3px 6px -2px rgba(85,85,85,1);
+  }
+  .multiselect-container.dropdown-menu a:hover,  .multiselect-container.dropdown-menu .active a:hover {
+    background-color: $pagination-hover-bg;
+    background: -moz-linear-gradient(top, $pagination-hover-bg 0%, $pagination-hover-bg 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $pagination-hover-bg 0%, $pagination-hover-bg 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $pagination-hover-bg 0%, $pagination-hover-bg 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$pagination-hover-bg', endColorstr='$pagination-hover-bg', GradientType=0); /* IE6-9 */
+
+  }
+  .multiselect-container.dropdown-menu .active a {
+    color: $gray;
+    background-color: $body-bg;
+    background: -moz-linear-gradient(top, $body-bg 0%, $body-bg 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $body-bg 0%, $body-bg 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $body-bg 0%, $body-bg 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gray-light', endColorstr='$gray-light', GradientType=0); /* IE6-9 */
+  }
+}
