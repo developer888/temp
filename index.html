@@ -1,37 +1,42 @@
 <!DOCTYPE html>
-<html style="height: 100%;" lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <title>Grid</title>
-    <!-- jquery -->
-    <script src="libs/jquery/jquery.js"></script>
-    <!-- bootstrap -->
-    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <script src="libs/ag-grid/dist/ag-grid.js"></script>
-    <link rel="stylesheet" type="text/css" href="libs/ag-grid/dist/ag-grid.css">
-    <link rel="stylesheet" type="text/css" href="libs/ag-grid/dist/theme-fresh.css">
-    <link rel="stylesheet" type="text/css" href="libs/ag-grid/dist/theme-dark.css">
-    <link rel="stylesheet" type="text/css" href="libs/ag-grid/dist/theme-blue.css">
-
-
-    <script src="js/grid.js"></script>
-
+    <script type="text/javascript" src="libs/jquery/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap-multiselect/bootstrap-multiselect.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap-table/bootstrap-table.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap-table/bootstrap-table.js"></script>
+    <script type="text/javascript" src="libs/bootstrap-multiselect/bootstrap-multiselect.js"></script>
 </head>
-<body style="height: 100%; margin: 0px;">
-
-<!--
-<button type="button" class="btn btn-default btn-lg">e</button>
-<button type="button" class="btn btn-primary btn-lg">x</button>
-<button type="button" class="btn btn-success btn-lg">a</button>
-<button type="button" class="btn btn-info btn-lg">m</button>
-<button type="button" class="btn btn-warning btn-lg">p</button>
-<button type="button" class="btn btn-danger btn-lg">l</button>
-<button type="button" class="btn btn-link btn-lg">e</button>-->
-
-<div id="myGrid" style="width: 100%; height: 100%;" class="ag-fresh"></div>
-
-
+<body>
+<div class="container-fluid">
+    <h1>Users</h1>
+    <table style="" id="table"
+           data-toggle="table"
+           data-height="500"
+           data-ajax="ajaxRequest"
+           data-checkbox-header="false"
+           data-search="true">
+        <thead>
+        <tr>
+            <th data-field="name" data-sortable="true">Name</th>
+            <th data-field="email" data-sortable="true">Email</th>
+            <th data-field="roles" data-sortable="true">Roles</th>
+            <th data-field="id" data-sortable="true">ID</th>
+            <!--<th data-field="isConfirmed" data-checkbox="true" data-width="100">Confirmed</th>-->
+            <th data-field="phone" data-sortable="true">Phone</th>
+            <th data-field="isOnline" data-sortable="true">Online</th>
+            <th>History</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+<div id="history-container" class="container-fluid"></div>
+<script src="js/grid.js"></script>
 </body>
 </html>

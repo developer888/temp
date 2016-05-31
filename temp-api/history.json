@@ -1,0 +1,28 @@
+{
+    "current": 1,
+    "rowCount": 10,
+    "total": 10020,
+    "rows": [
+        {
+            "timestamp": "2015-02-01 10:45 21",
+            "url": "api/vis/benchmarks",
+            "roleFilters": " 'hospital' == \"ABC\" ",
+            "webFilters": "1233",
+            "roles": ["Sister"]
+        },
+        {
+            "timestamp": "2015-02-04 10:45 21",
+            "url": "api/vis/benchmarks/dd",
+            "roleFilters": " 'hospital' == \"dgt\" ",
+            "webFilters": "4556",
+            "roles": ["Doctor"]
+        },
+        {
+            "timestamp": "2015-02-07 10:45 21",
+            "url": "api/vis/benchmarks/rr",
+            "roleFilters": " 'hospital' == \"cvb\" ",
+            "webFilters": "4556",
+            "roles": ["admin"]
+        }
+    ]
+}

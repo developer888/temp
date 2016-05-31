@@ -1,0 +1,201 @@
+/* LIBS OVERRIDES */
+.position-relative {
+  position: relative; }
+
+*, *:hover {
+  outline: none !important;
+  text-decoration: none !important; }
+
+.bottom-spacing {
+  margin-bottom: 20px; }
+
+.e-left-spacing {
+  margin-left: 20px; }
+
+/*
+  @include label-variant($label-default-bg);
+}
+
+.label-primary {
+  @include label-variant($label-primary-bg);
+}
+
+.label-success {
+  @include label-variant($label-success-bg);
+}
+
+.label-info {
+  @include label-variant($label-info-bg);
+}
+
+.label-warning {
+  @include label-variant($label-warning-bg);
+}
+
+.label-danger {
+  @include label-variant($label-danger-bg);
+*/
+.label-default a, .label-default a:visited, .label-default a:active, .label-default a:link {
+  color: #c4c4c4 !important; }
+
+.label-default a:hover {
+  color: white !important; }
+
+.label-primary a, .label-primary a:visited, .label-primary a:active, .label-primary a:link {
+  color: #8675c5 !important; }
+
+.label-primary a:hover {
+  color: white !important; }
+
+.label-success a, .label-success a:visited, .label-success a:active, .label-success a:link {
+  color: #c7ead3 !important; }
+
+.label-success a:hover {
+  color: white !important; }
+
+.label-info a, .label-info a:visited, .label-info a:active, .label-info a:link {
+  color: #daf1f8 !important; }
+
+.label-info a:hover {
+  color: white !important; }
+
+.label-warning a, .label-warning a:visited, .label-warning a:active, .label-warning a:link {
+  color: #fceedb !important; }
+
+.label-warning a:hover {
+  color: white !important; }
+
+.label-danger a, .label-danger a:visited, .label-danger a:active, .label-danger a:link {
+  color: #f4cecd !important; }
+
+.label-danger a:hover {
+  color: white !important; }
+
+.e-font-weight-normal {
+  font-weight: normal !important; }
+
+a[href="http://www.amcharts.com/javascript-charts/"] {
+  display: none !important; }
+
+/* LIBS INCLUDE */
+/* OUR FILES INCLUDE */
+table td:nth-child(1) {
+  white-space: nowrap; }
+
+table td:nth-child(3) {
+  width: 300px; }
+
+table td:nth-child(4) {
+  min-width: 300px !important; }
+
+#table > tbody > tr > td:nth-child(3) {
+  padding: 0 !important; }
+
+#table label.checkbox > input[type="checkbox"] {
+  margin-left: -20px !important;
+  margin-top: 3px !important; }
+
+body {
+  background-color: #fff;
+  color: #555555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px; }
+  body .fixed-table-container {
+    border-radius: 0px !important; }
+  body .form-control, body .form-control:active {
+    margin-top: -50px;
+    color: #555555;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 0px !important;
+    box-shadow: none !important; }
+  body .form-control:focus {
+    border-color: #555555 !important; }
+  body h1 {
+    font-size: 36px;
+    font-weight: 700; }
+  body h2 {
+    font-size: 30px;
+    border: none; }
+  body table.table {
+    background: transparent; }
+    body table.table tr th {
+      font-size: 18px;
+      background-color: #f8f8f8 !important;
+      border-radius: 0px !important; }
+    body table.table tr td {
+      border-color: #ddd;
+      background-color: inherit !important;
+      border-radius: 0px !important; }
+      body table.table tr td .btn-group.open .dropdown-toggle, body table.table tr td button:active {
+        box-shadow: none !important;
+        background-color: transparent !important; }
+      body table.table tr td button.dropdown-toggle {
+        width: 299px;
+        border: 0;
+        padding: 8px;
+        text-align: left;
+        background: transparent;
+        background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, transparent 0%, transparent 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$transparent-bg', endColorstr='$transparent-bg', GradientType=0);
+        /* IE6-9 */ }
+        body table.table tr td button.dropdown-toggle span {
+          text-shadow: none; }
+        body table.table tr td button.dropdown-toggle b {
+          float: right;
+          margin: 4px;
+          color: #555555; }
+      body table.table tr td button {
+        border-radius: 0px;
+        padding: 0 12px; }
+    body table.table tr:nth-child(2n) {
+      background-color: #f9f9f9; }
+    body table.table tr:hover {
+      background-color: #f5f5f5 !important; }
+  body a {
+    color: #3E3071; }
+  body a:hover {
+    color: #21193b;
+    text-decoration: none; }
+  body button {
+    color: #3E3071;
+    background-color: transparent;
+    border: 0; }
+  body #table td:nth-child(6), body #table td:nth-child(7) {
+    text-align: center;
+    vertical-align: middle; }
+  body button:hover, body button:focus {
+    color: #555555 !important; }
+  body .multiselect-container.dropdown-menu {
+    border-radius: 0px !important;
+    width: 299px;
+    -webkit-box-shadow: 0px 3px 6px -2px #555555;
+    -moz-box-shadow: 0px 3px 6px -2px #555555;
+    box-shadow: 0px 3px 6px -2px #555555; }
+  body .multiselect-container.dropdown-menu a:hover, body .multiselect-container.dropdown-menu .active a:hover {
+    background-color: #eeeeee;
+    background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #eeeeee 0%, #eeeeee 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$pagination-hover-bg', endColorstr='$pagination-hover-bg', GradientType=0);
+    /* IE6-9 */ }
+  body .multiselect-container.dropdown-menu .active a {
+    color: #555555;
+    background-color: #fff;
+    background: -moz-linear-gradient(top, #fff 0%, #fff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fff 0%, #fff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gray-light', endColorstr='$gray-light', GradientType=0);
+    /* IE6-9 */ }
+
+/*# sourceMappingURL=style.css.map */
